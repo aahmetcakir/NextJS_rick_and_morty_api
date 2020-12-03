@@ -1,22 +1,26 @@
 import unfetch from "isomorphic-unfetch"
 import Link from "next/link"
 import slug from "slug"
+import Card from "../components/card"
+
 
 function HomePage({ characters}) {
 
     return <div>
-        <h1> Welcome to Next.JS</h1>
+        <h1> Rick And Morty </h1>
         <ul>
             {characters.results.map(character => 
             <li>
-                    <Link href="character/[id]" as={`/character/${slug(character.name)}-${character.id}`}>
+                <Link href="character/[id]" as={`/character/${slug(character.name)}-${character.id}`}>
                 <a>
-                 {character.name} 
+                 {character.name}<hr/>
+                <img src={character.image} alt={character.name}/>
                 </a>
                 </Link>
             </li>)
             }
         </ul>
+
     </div>
     
 

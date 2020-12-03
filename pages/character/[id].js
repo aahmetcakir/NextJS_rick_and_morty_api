@@ -1,17 +1,17 @@
 import unfetch from "isomorphic-unfetch"
 import slug from "slug"
+import Card from "../../components/card"
 
 function characterDetail({ character }) {
 
     return <div>
-        <h1>Name : {character.name}</h1>
-        <h3>status : {character.status}</h3>
-        <h3>gender : {character.gender}</h3>
-        <h3>species : {character.species}</h3>
-        <h3>location : {character.location.name}</h3>
-        <figure>
-        <img src={character.image} alt={character.name}/>
-        </figure>
+        <Card
+            name={character.name}
+            gender={character.gender}
+            species={character.species}
+            image={character.image}
+            status={character.status} />
+
         </div>
 }
 

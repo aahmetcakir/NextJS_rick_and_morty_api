@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;700&display=swap');
+
+.container{
+    max-width: 450px;
+    box-sizing: border-box;
+    margin-left:auto ;
+    margin-right:auto ;
+}
+.title{
+    color: rgb(61, 58, 58);
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.imageContainer{
+    max-width: 400px;
+    background-color: gray;
+    border: 1px solid rgb(20, 19, 19);
+}
+.list{
+    list-style: none;
+    border: 1px solid rgb(44, 40, 40);
+    max-width: 400px;
+    padding: 0px;
+
+}
+.item{
+    border: 1px solid rgb(43, 40, 40);
+    background-color: gray;
+        margin-left:auto ;
+    margin-right:auto ;
+}
+.detailTitle{
+    background-color: rgb(31, 28, 28);
+    color: white;
+    font-size: 20px;
+}
